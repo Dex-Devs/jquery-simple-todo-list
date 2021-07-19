@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple To-Do List App | Created by DexDev</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+</head>
+<body>
+  <header>
+    <h1>Simple To-Do List App made with jQuery</h1>
+  </header>
+
+  <div class="inp-container cont-col">
+    <div class="center">
+      <input type="text" class="text-inp" id="text" placeholder="Enter task to add">
+      <button id="add-btn"><strong>ADD TASK</strong></button>
+    </div>
+  </div>
+
+  <div class="tasks-container cont-col" id="container">
+      <h2 class="title--spacing">YOUR TASKS</h2>
+      <p class="no-task-message">You don't have any tasks yet.</p>
+      <!-- CONTAINER STRUCTURE -->
+      
+      <!-- <div class="tasks-sub-cont">
+        <div class="p-container"> 
+          <p>EXAMPLE TASK</p>
+        </div>
+        <div class="icon-placer" id="placer">
+          <div class ="icon-container"><i class="fa fa-edit icon" style="font-size: 1.8rem;"></i></div>
+          <div class ="icon-container" id="delete"><i class="fa fa-trash icon" style="font-size: 1.8rem;" id="delete-btn"></i></div>
+        </div>
+      </div> -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="index.js"></script>
+</body>
+</html>
