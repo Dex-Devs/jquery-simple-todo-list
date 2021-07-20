@@ -20,6 +20,7 @@ $(document).ready(function (){
 
     }else if(!(tasksAdded.includes(task))) {
 
+      // BUILD CONTAINERS
       $('#container .no-task-message').css('display', 'none');
       tasksAdded.push(task);
       
@@ -124,6 +125,7 @@ $(document).ready(function (){
             }
           }
         }).then(object => object).catch(error => {console.log(error)});
+        
         if(edited) {
           edited = edited.toUpperCase();
 
@@ -148,10 +150,8 @@ $(document).ready(function (){
               confirmButtonText: 'Continue'
             });
           }
-        
         }
       })
-
   })
 
 })
